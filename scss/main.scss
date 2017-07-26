@@ -67,10 +67,6 @@ header {
   height: 350px;
 }
 
-section {
-  margin-top: 20px;
-}
-
 .about_me {
   width: inherit;
   display: flex;
@@ -190,7 +186,7 @@ section {
 }
 
 #skills {
-  margin-top: 300px;
+  margin-top: 270px;
 }
 
 .title_heading {
@@ -206,7 +202,6 @@ section {
   width: inherit;
   display: flex;
   flex-direction: column;
-  margin-bottom: 100px;
 
   .prog_img {
     display: flex;
@@ -259,5 +254,18 @@ section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    cursor: pointer;
   }
+}
+
+.chip {
+  background: #e0e0e0;
+
+  &:hover {
+    background: #bdbdbd;
+  }
+}
+
+.chip_select {
+  background: #bdbdbd;
 }

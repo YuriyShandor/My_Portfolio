@@ -188,3 +188,76 @@ section {
     }
   }
 }
+
+#skills {
+  margin-top: 300px;
+}
+
+.title_heading {
+  font-size: 35px;
+  font-weight: 300;
+  color: #424242;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.my_skills {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+
+  .prog_img {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .progressing {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+    .my_progress {
+      width: inherit;
+      display: flex;
+      flex-direction: column;
+      margin-left: 20px;
+
+      .scill_percent {
+        width: inherit;
+        display: flex;
+        justify-content: space-between;
+
+        span {
+          font-size: 16px;
+          font-weight: 300;
+          color: #757575;
+        }
+      }
+
+      .progress {
+        width: inherit;
+        border-radius: 345px;
+        background: #bdbdbd;
+      }
+    }
+  }
+
+  #img_programming {
+    width: 300px;
+    height: 180px;
+    margin-right: 20px;
+    border-radius: 3px;
+  }
+
+  .skills_chips {
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

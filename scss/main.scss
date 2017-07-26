@@ -67,6 +67,10 @@ header {
   height: 350px;
 }
 
+section {
+  margin-top: 20px;
+}
+
 .about_me {
   width: inherit;
   display: flex;
@@ -202,6 +206,7 @@ header {
   width: inherit;
   display: flex;
   flex-direction: column;
+  border-radius: 2px;
 
   .prog_img {
     display: flex;
@@ -251,6 +256,7 @@ header {
     width: 600px;
     margin: 0 auto;
     margin-top: 30px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -268,4 +274,58 @@ header {
 
 .chip_select {
   background: #bdbdbd;
+}
+
+.my_education {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2px;
+
+  .diplom {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 25px;
+      font-weight: 300;
+      color: #616161;
+      margin: 0 auto;
+    }
+
+    .diit {
+      width: inherit;
+      display: flex;
+
+      img {
+        width: 150px;
+        margin-left: 30px;
+      }
+
+      .spec {
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15px;
+
+        h3 {
+          margin: 0;
+          font-size: 18px;
+          font-weight: 300;
+          text-transform: uppercase;
+          color: #616161;
+          margin-bottom: 5px;
+        }
+
+        span {
+          font-size: 14px;
+          font-weight: 300;
+          color: #757575;
+        }
+      }
+    }
+  }
 }

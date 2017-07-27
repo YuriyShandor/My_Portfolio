@@ -190,7 +190,7 @@ section {
 }
 
 #skills {
-  margin-top: 270px;
+  margin-top: 303px;
 }
 
 .title_heading {
@@ -342,12 +342,18 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 10px;
+  }
+}
 
-    img {
-      width: 210px;
-      height: 250px;
-      border-radius: 3px;
-      margin-bottom: 20px;
-    }
+.murcup {
+  width: 210px;
+  height: 250px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  transition-property: all;
+  transition-duration: 0.5s;
+
+  &:hover {
+    @extend .z-depth-4;
   }
 }

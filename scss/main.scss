@@ -181,15 +181,23 @@ section {
       justify-content: space-between;
       align-items: center;
 
+      .my-socials__icons_icon {
+        color: #fff;
+        transition: all, 0.5s;
 
-      img {
-        width: 40px;
+        &:hover {
+          color: #fff176;
+        }
+      }
+
+      .fa-telegram {
+        font-size: 40px;
       }
     }
   }
 }
 
-.title_heading {
+.title-heading {
   font-size: 35px;
   font-weight: 300;
   color: #424242;
@@ -198,24 +206,25 @@ section {
   margin-bottom: 20px;
 }
 
-.my_skills {
+.my-skills {
   width: inherit;
   display: flex;
   flex-direction: column;
   border-radius: 2px;
 
-  .prog_img {
+  .my-skills__progress {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
-  .progressing {
+  .my-progress {
     width: 300px;
     display: flex;
     flex-direction: column;
     margin-top: 15px;
 
-    .my_progress {
+    .my-progress__line {
       width: inherit;
       display: flex;
       flex-direction: column;

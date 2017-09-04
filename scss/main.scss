@@ -257,7 +257,7 @@ section {
     border-radius: 3px;
   }
 
-  .skills_chips {
+  .my-skills__chips {
     width: 600px;
     margin: 0 auto;
     margin-top: 30px;
@@ -281,13 +281,13 @@ section {
   background: #bdbdbd;
 }
 
-.my_education {
+.my-education {
   width: inherit;
   display: flex;
   flex-direction: column;
   border-radius: 2px;
 
-  .diplom {
+  .my-diplom {
     width: inherit;
     display: flex;
     flex-direction: column;
@@ -335,7 +335,7 @@ section {
   }
 }
 
-.my_works {
+.my-works {
   width: inherit;
   display: flex;
   flex-direction: column;

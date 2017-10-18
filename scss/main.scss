@@ -275,6 +275,13 @@ section {
   &:hover {
     background: #bdbdbd;
   }
+
+  img {
+    height: 25px;
+    transform: translateY(5px);
+    margin-left: 0px;
+    border-radius: 0;
+  }
 }
 
 .chip_select {

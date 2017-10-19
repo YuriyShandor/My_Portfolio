@@ -9969,7 +9969,7 @@ section {
     display: -ms-flexbox;
     display: flex; }
     .about-me .about-me__info .info-discription {
-      width: 380px;
+      width: 400px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
@@ -10114,7 +10114,7 @@ section {
     margin-right: 20px;
     border-radius: 3px; }
   .my-skills .my-skills__chips {
-    width: 600px;
+    width: 580px;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -10129,15 +10129,38 @@ section {
     cursor: pointer; }
 
 .chip {
-  background: #e0e0e0; }
+  background: #e0e0e0;
+  position: relative;
+  margin-top: 10px; }
+  .chip img {
+    width: 15px;
+    height: 15px;
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+    margin-left: -5px;
+    border-radius: 0; }
+  .chip .chip-info {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 200px;
+    padding: 0 10px;
+    background: #bdbdbd;
+    z-index: 1; }
+    .chip .chip-info p {
+      width: inherit;
+      margin: 0;
+      padding: 0;
+      text-align: center; }
   .chip:hover {
     background: #bdbdbd; }
-  .chip img {
-    height: 25px;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-    margin-left: 0px;
-    border-radius: 0; }
+    .chip:hover .chip-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
 
 .chip_select {
   background: #bdbdbd; }

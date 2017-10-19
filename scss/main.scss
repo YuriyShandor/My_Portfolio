@@ -116,7 +116,7 @@ section {
     display: flex;
 
     .info-discription {
-      width: 380px;
+      width: 400px;
       display: flex;
 
       .discription-info {
@@ -258,7 +258,7 @@ section {
   }
 
   .my-skills__chips {
-    width: 600px;
+    width: 580px;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -271,16 +271,42 @@ section {
 
 .chip {
   background: #e0e0e0;
+  position: relative;
+  margin-top: 10px;
+
+  img {
+    width: 15px;
+    height: 15px;
+    transform: translateY(8px);
+    margin-left: -5px;
+    border-radius: 0;
+  }
+
+  .chip-info {
+    display: none;
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    padding: 0 10px;
+    background: #bdbdbd;
+    z-index: 1;
+
+    p {
+      width: inherit;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+  }
 
   &:hover {
     background: #bdbdbd;
-  }
 
-  img {
-    height: 25px;
-    transform: translateY(5px);
-    margin-left: 0px;
-    border-radius: 0;
+    .chip-info {
+      display: flex;
+    }
   }
 }
 

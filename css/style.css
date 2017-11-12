@@ -125,6 +125,16 @@ section {
   color: #757575;
 }
 
+.about-me__info_cv a {
+  background: #00bcd4;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.about-me__info_cv a:hover {
+  background: #0097a7;
+}
+
 .about-me .social-icons {
   padding: 10px 0;
   border-radius: 0 0 3px 3px;
@@ -381,20 +391,10 @@ section {
 }
 
 .my-works {
-  width: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  margin-bottom: 30px;
 }
 
-.my-works .works {
+.my-works__block .works {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,15 +405,18 @@ section {
   flex-wrap: wrap;
 }
 
-.murcup {
+.my-works__block .works .murcup {
   width: 210px;
   height: 250px;
   border-radius: 3px;
   margin: 10px;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.my-works__block .works .murcup:hover {
+  -webkit-box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 }
 
 #last {

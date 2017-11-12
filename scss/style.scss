@@ -423,18 +423,8 @@ section {
 }
 
 .my-education {
-  width: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 2px;
-
-  .my-diplom {
-    width: inherit;
+  &__diplom {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -442,27 +432,26 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 30px;
 
     h1 {
       font-size: 25px;
       font-weight: 300;
       color: #616161;
       margin: 0 auto;
+      margin-bottom: 10px;
     }
 
-    .diit {
-      width: inherit;
+    &_diit {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      margin: 0 auto;
 
       img {
         width: 150px;
-        margin-left: 30px;
       }
 
-      .spec {
+      .speciality {
         width: 420px;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -474,7 +463,7 @@ section {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        margin-left: 15px;
+        margin-left: 35px;
 
         h3 {
           margin: 0;
@@ -489,6 +478,50 @@ section {
           font-size: 14px;
           font-weight: 300;
           color: #757575;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .my-education {
+    &__diplom {
+      &_diit {
+        .speciality {
+          width: 310px;
+          margin-left: 15px;
+
+          h3 {
+            font-size: 16px;
+          }
+
+          span {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 567px) {
+  .my-education {
+    &__diplom {
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      &_diit {
+        img {
+          display: none;
+        }
+
+        .speciality {
+          width: 100%;
+          margin-left: 0;
+          padding: 0 15px;
+          text-align: center;
         }
       }
     }

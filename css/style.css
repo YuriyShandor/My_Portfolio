@@ -292,8 +292,8 @@ section {
   }
 }
 
-.my-education {
-  width: inherit;
+.my-education__diplom {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,41 +301,28 @@ section {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border-radius: 2px;
 }
 
-.my-education .my-diplom {
-  width: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-bottom: 30px;
-}
-
-.my-education .my-diplom h1 {
+.my-education__diplom h1 {
   font-size: 25px;
   font-weight: 300;
   color: #616161;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
 
-.my-education .my-diplom .diit {
-  width: inherit;
+.my-education__diplom_diit {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
 }
 
-.my-education .my-diplom .diit img {
+.my-education__diplom_diit img {
   width: 150px;
-  margin-left: 30px;
 }
 
-.my-education .my-diplom .diit .spec {
+.my-education__diplom_diit .speciality {
   width: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,10 +334,10 @@ section {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin-left: 15px;
+  margin-left: 35px;
 }
 
-.my-education .my-diplom .diit .spec h3 {
+.my-education__diplom_diit .speciality h3 {
   margin: 0;
   font-size: 18px;
   font-weight: 300;
@@ -359,10 +346,38 @@ section {
   margin-bottom: 5px;
 }
 
-.my-education .my-diplom .diit .spec span {
+.my-education__diplom_diit .speciality span {
   font-size: 14px;
   font-weight: 300;
   color: #757575;
+}
+
+@media only screen and (max-width: 767px) {
+  .my-education__diplom_diit .speciality {
+    width: 310px;
+    margin-left: 15px;
+  }
+  .my-education__diplom_diit .speciality h3 {
+    font-size: 16px;
+  }
+  .my-education__diplom_diit .speciality span {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  .my-education__diplom h1 {
+    margin-bottom: 20px;
+  }
+  .my-education__diplom_diit img {
+    display: none;
+  }
+  .my-education__diplom_diit .speciality {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 15px;
+    text-align: center;
+  }
 }
 
 .my-works {

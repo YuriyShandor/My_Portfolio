@@ -28,6 +28,7 @@ section {
 
 .container {
   border-radius: 3px;
+  padding: 30px 0;
 }
 
 .about-me {
@@ -229,107 +230,39 @@ section {
   font-size: 35px;
   font-weight: 300;
   color: #424242;
-  margin: 0 auto;
-  margin-top: 20px;
+  text-align: center;
+  margin: 0;
   margin-bottom: 20px;
 }
 
-.my-skills {
-  width: inherit;
+.my-skills__block {
+  display: -ms-flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  border-radius: 2px;
 }
 
-.my-skills .my-skills__progress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.my-skills__block .skills__img {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 45%;
+  margin-left: 5%;
+  background: url(../img/HTML-programing.jpeg) no-repeat center/cover;
 }
 
-.my-skills .my-progress {
-  width: 300px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-top: 15px;
-}
-
-.my-skills .my-progress .my-progress__line {
-  width: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  margin-left: 20px;
-}
-
-.my-skills .my-progress .my-progress__line .scill_percent {
-  width: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.my-skills .my-progress .my-progress__line .scill_percent span {
-  font-size: 16px;
-  font-weight: 300;
-  color: #757575;
-}
-
-.my-skills .my-progress .my-progress__line .progress {
-  width: inherit;
-  border-radius: 345px;
-  background: #bdbdbd;
-}
-
-.my-skills #img_programming {
-  width: 300px;
-  height: 180px;
-  margin-right: 20px;
-  border-radius: 3px;
-}
-
-.my-skills .my-skills__chips {
-  width: 580px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  cursor: pointer;
+.my-skills__block .my-skills__chips {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 40%;
+  margin-left: 30px;
+  margin-top: -10px;
 }
 
 .chip {
   background: #e0e0e0;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .chip:hover {
@@ -338,6 +271,25 @@ section {
 
 .chip_select {
   background: #bdbdbd;
+}
+
+@media only screen and (max-width: 767px) {
+  .my-skills__block .skills__img {
+    display: none;
+  }
+  .my-skills__block .my-skills__chips {
+    display: -ms-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0px;
+    padding: 0 5%;
+  }
 }
 
 .my-education {

@@ -277,99 +277,6 @@ section {
   margin-bottom: 20px;
 }
 
-// .my-skills {
-//   width: inherit;
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-orient: vertical;
-//   -webkit-box-direction: normal;
-//       -ms-flex-direction: column;
-//           flex-direction: column;
-//   border-radius: 2px;
-//
-//   .my-skills__progress {
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -webkit-box-pack: justify;
-//         -ms-flex-pack: justify;
-//             justify-content: space-between;
-//     -webkit-box-align: center;
-//         -ms-flex-align: center;
-//             align-items: center;
-//   }
-//
-//   .my-progress {
-//     width: 300px;
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -webkit-box-orient: vertical;
-//     -webkit-box-direction: normal;
-//         -ms-flex-direction: column;
-//             flex-direction: column;
-//     margin-top: 15px;
-//
-//     .my-progress__line {
-//       width: inherit;
-//       display: -webkit-box;
-//       display: -ms-flexbox;
-//       display: flex;
-//       -webkit-box-orient: vertical;
-//       -webkit-box-direction: normal;
-//           -ms-flex-direction: column;
-//               flex-direction: column;
-//       margin-left: 20px;
-//
-//       .scill_percent {
-//         width: inherit;
-//         display: -webkit-box;
-//         display: -ms-flexbox;
-//         display: flex;
-//         -webkit-box-pack: justify;
-//             -ms-flex-pack: justify;
-//                 justify-content: space-between;
-//
-//         span {
-//           font-size: 16px;
-//           font-weight: 300;
-//           color: #757575;
-//         }
-//       }
-//
-//       .progress {
-//         width: inherit;
-//         border-radius: 345px;
-//         background: #bdbdbd;
-//       }
-//     }
-//   }
-//
-//   #img_programming {
-//     width: 300px;
-//     height: 180px;
-//     margin-right: 20px;
-//     border-radius: 3px;
-//   }
-//
-//   .my-skills__chips {
-//     width: 580px;
-//     margin: 0 auto;
-//     margin-top: 30px;
-//     margin-bottom: 20px;
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: flex;
-//     -webkit-box-pack: center;
-//         -ms-flex-pack: center;
-//             justify-content: center;
-//     -ms-flex-wrap: wrap;
-//         flex-wrap: wrap;
-//     cursor: pointer;
-//   }
-// }
-
 .my-skills {
   &__block {
     display: -ms-flex;
@@ -569,8 +476,4 @@ section {
       }
     }
   }
-}
-
-#last {
-  margin-bottom: 20px;
 }

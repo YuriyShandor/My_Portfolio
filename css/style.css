@@ -410,8 +410,8 @@ section {
   height: 250px;
   border-radius: 3px;
   margin: 10px;
-  -webkit-transition: all, 0.5s;
-  transition: all, 0.5s;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 
 .my-works__block .works .murcup:hover {
